@@ -49,3 +49,7 @@ body {
 .btn:hover {
   background-color: #ababab;
 }
+
+.frase {
+  color: rgba(166, 14, 14, 0.595);
+}
