@@ -50,25 +50,25 @@ body {
   background-color: #ababab;
 }
 
-.btn-color-yellow {
-  background: rgb(228, 228, 0);
+.btn-color {
+  background: rgba(193, 18, 178, 0.803);
 }
 
-.btn-color-yellow:hover {
-  background-color: rgba(228, 228, 0, 0.529);
+.btn-color:hover {
+  background-color: rgba(193, 18, 178, 0.572);
 }
 
 @media only screen and (max-device-width: 500px) {
   .btn {
-    color: white;
-    background: #c5c5c5;
+    color: black;
+    background: #dfdfdf;
   }
 
-  .btn-color-yellow {
-    background: rgb(228, 228, 0);
+  .btn-color {
+    background: rgba(193, 18, 178, 0.803);
   }
 
-  .btn-color-yellow:hover {
-    background-color: rgba(228, 228, 0, 0.529);
+  .btn-color:hover {
+    background-color: rgba(193, 18, 178, 0.572);
   }
 }
