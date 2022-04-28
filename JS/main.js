@@ -48,9 +48,22 @@ function criaCalculadora() {
             let = num = this.display.value
 
             try {
-                const raiz = num ** (1/2)
+                const raiz = num ** (1/2);
 
                 this.display.value = String(raiz);
+            } catch(e) {
+                alert('Raiz quadrada inválida')
+                return;
+            }
+        },
+
+        realizaRaiz3() {
+            let = num = this.display.value
+
+            try {
+                const raiz3 = num ** (1/3);
+
+                this.display.value = String(raiz3);
             } catch(e) {
                 alert('Raiz quadrada inválida')
                 return;
@@ -87,6 +100,10 @@ function criaCalculadora() {
 
                 if(el.classList.contains('btn-raiz')) {
                     this.realizaRaiz();
+                }
+
+                if(el.classList.contains('btn-raiz3')) {
+                    this.realizaRaiz3();
                 }
              });
         },
