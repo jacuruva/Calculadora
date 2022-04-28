@@ -63,9 +63,9 @@ function criaCalculadora() {
             try {
                 const raiz3 = num ** (1/3);
 
-                this.display.value = String(raiz3);
+                this.display.value = String(raiz3.toFixed(14));
             } catch(e) {
-                alert('Raiz quadrada inválida')
+                alert('Raiz cubica inválida')
                 return;
             }
         },
