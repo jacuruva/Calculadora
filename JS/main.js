@@ -44,6 +44,19 @@ function criaCalculadora() {
             }
         },
 
+        realizaRaiz() {
+            let = num = this.display.value
+
+            try {
+                const raiz = num ** (1/2)
+
+                this.display.value = String(raiz);
+            } catch(e) {
+                alert('Raiz quadrada inválida')
+                return;
+            }
+        },
+
         clearDisplay() {
             this.display.value = '';
         },
@@ -70,6 +83,10 @@ function criaCalculadora() {
 
                 if(el.classList.contains('btn-eq')) {
                     this.realizaConta();
+                }
+
+                if(el.classList.contains('btn-raiz')) {
+                    this.realizaRaiz();
                 }
              });
         },
